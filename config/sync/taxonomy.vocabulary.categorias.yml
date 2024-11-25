@@ -1,0 +1,9 @@
+uuid: 5a875410-6140-4a93-b3bf-7d401abe8f3c
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Categorias
+vid: categorias
+description: null
+weight: 0
+new_revision: false

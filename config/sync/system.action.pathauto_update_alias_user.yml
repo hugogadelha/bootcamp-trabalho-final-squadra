@@ -1,0 +1,16 @@
+uuid: c3bf4c1e-aff1-4e27-8d85-a76664f38c74
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - pathauto
+  enforced:
+    module:
+      - user
+_core:
+  default_config_hash: 6eiNWATGTd3lUEKuxNPNyDRDVMsUlM0HS90_R6JJLUI
+id: pathauto_update_alias_user
+label: 'Atualizar Apelido'
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

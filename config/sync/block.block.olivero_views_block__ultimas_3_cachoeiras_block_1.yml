@@ -1,0 +1,24 @@
+uuid: 06ed966a-5e39-4d46-b2f6-89a7242ae962
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.ultimas_3_cachoeiras
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__ultimas_3_cachoeiras_block_1
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:ultimas_3_cachoeiras-block_1'
+settings:
+  id: 'views_block:ultimas_3_cachoeiras-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 377f0ae1-1711-412a-9d1f-31158e372dfb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__who_s_online_who_s_online_block
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

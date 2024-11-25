@@ -1,0 +1,22 @@
+uuid: dd7522e7-c6ca-4859-ac2e-9f9a14958e96
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: padrao_de_url_para_parques
+label: 'Padrão de URL para Parques'
+type: 'canonical_entities:node'
+pattern: '/parques/[node:title]'
+selection_criteria:
+  428f760b-583f-4966-91bf-57a92ac4a3d4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 428f760b-583f-4966-91bf-57a92ac4a3d4
+    context_mapping:
+      node: node
+    bundles:
+      parques_de_diversao: parques_de_diversao
+selection_logic: and
+weight: -5
+relationships: {  }

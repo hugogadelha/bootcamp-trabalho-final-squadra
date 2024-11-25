@@ -1,0 +1,21 @@
+uuid: a7e7c565-08cd-4ffb-bd27-0a31e738fb02
+langcode: pt-br
+status: true
+dependencies: {  }
+name: imagem_padrao_dos_conteudos
+label: 'Imagem Padrão dos Conteúdos'
+effects:
+  905511f2-66e4-425c-ab8e-befee823ce9b:
+    uuid: 905511f2-66e4-425c-ab8e-befee823ce9b
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp
+  0517404a-2948-4999-95f7-f9a2dc5279f2:
+    uuid: 0517404a-2948-4999-95f7-f9a2dc5279f2
+    id: image_scale
+    weight: -10
+    data:
+      width: 450
+      height: null
+      upscale: true

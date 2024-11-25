@@ -1,0 +1,9 @@
+uuid: 3b17a61d-09af-44e9-bc2b-cc71bb3a591f
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Tipo
+vid: tipo
+description: null
+weight: 0
+new_revision: false

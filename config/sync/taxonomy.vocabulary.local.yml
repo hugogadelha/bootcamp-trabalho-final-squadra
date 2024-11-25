@@ -1,0 +1,9 @@
+uuid: 585b816d-2229-4421-ab81-ddf9d1e88ea0
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Localização
+vid: local
+description: 'Hierarquia de países e cidades para localização de cachoeiras e parques'
+weight: 0
+new_revision: false

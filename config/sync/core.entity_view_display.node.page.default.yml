@@ -1,0 +1,106 @@
+uuid: 42e43a3c-0f35-4f6b-8aec-3ee435a085e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - node.type.page
+    - views.view.cachoeiras_em_destaque
+    - views.view.parque_em_destaque
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          bbc359e2-8867-408c-839c-22c610e53793:
+            uuid: bbc359e2-8867-408c-839c-22c610e53793
+            region: first
+            configuration:
+              id: 'views_block:cachoeiras_em_destaque-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          a5392482-44f9-4819-abdc-ea666a974dec:
+            uuid: a5392482-44f9-4819-abdc-ea666a974dec
+            region: second
+            configuration:
+              id: 'views_block:parque_em_destaque-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          94c1cfbb-0a3c-4e0c-8501-d8558edb88b8:
+            uuid: 94c1cfbb-0a3c-4e0c-8501-d8558edb88b8
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cd2ab755-1e80-4dfd-a2fe-6b381156f2b5:
+            uuid: cd2ab755-1e80-4dfd-a2fe-6b381156f2b5
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  langcode: true

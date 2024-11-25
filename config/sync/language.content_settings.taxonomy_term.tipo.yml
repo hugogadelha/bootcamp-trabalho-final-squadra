@@ -1,0 +1,11 @@
+uuid: 79194cd4-7e76-4f17-953e-6c182b45398e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo
+id: taxonomy_term.tipo
+target_entity_type_id: taxonomy_term
+target_bundle: tipo
+default_langcode: site_default
+language_alterable: false

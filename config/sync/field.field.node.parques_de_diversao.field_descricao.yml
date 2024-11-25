@@ -1,0 +1,22 @@
+uuid: c8c36eef-016a-40d7-8f6e-bf5230297834
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao
+    - node.type.parques_de_diversao
+  module:
+    - text
+id: node.parques_de_diversao.field_descricao
+field_name: field_descricao
+entity_type: node
+bundle: parques_de_diversao
+label: Descrição
+description: 'Forneça uma descrição detalhada do parque, incluindo informações sobre suas atrações, história ou outros detalhes relevantes. Utilize o editor para formatar o texto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

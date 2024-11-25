@@ -1,0 +1,33 @@
+uuid: 48dec5e6-a505-4914-9ccc-fab871643c9a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parques_de_diversao.field_categoria
+    - field.field.node.parques_de_diversao.field_data_de_abertura
+    - field.field.node.parques_de_diversao.field_descricao
+    - field.field.node.parques_de_diversao.field_foto
+    - field.field.node.parques_de_diversao.field_local
+    - field.field.node.parques_de_diversao.field_site_oficial
+    - node.type.parques_de_diversao
+  module:
+    - user
+id: node.parques_de_diversao.teaser
+targetEntityType: node
+bundle: parques_de_diversao
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_categoria: true
+  field_data_de_abertura: true
+  field_descricao: true
+  field_foto: true
+  field_local: true
+  field_site_oficial: true
+  langcode: true

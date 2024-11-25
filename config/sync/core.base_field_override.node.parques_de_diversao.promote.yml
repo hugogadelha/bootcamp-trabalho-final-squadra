@@ -1,0 +1,22 @@
+uuid: 631083c1-1f0e-409e-827d-e509b0e24b93
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques_de_diversao
+id: node.parques_de_diversao.promote
+field_name: promote
+entity_type: node
+bundle: parques_de_diversao
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

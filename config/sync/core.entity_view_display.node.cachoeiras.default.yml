@@ -1,0 +1,99 @@
+uuid: a3ad4a6e-7db1-485f-b286-9cc1ef9f254a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.cachoeiras.field_altura_em_metros
+    - field.field.node.cachoeiras.field_descricao
+    - field.field.node.cachoeiras.field_dificuldade
+    - field.field.node.cachoeiras.field_foto
+    - field.field.node.cachoeiras.field_instrucoes_de_acesso
+    - field.field.node.cachoeiras.field_local
+    - field.field.node.cachoeiras.field_site_oficial
+    - image.style.imagem_padrao_dos_conteudos
+    - node.type.cachoeiras
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.cachoeiras.default
+targetEntityType: node
+bundle: cachoeiras
+mode: default
+content:
+  field_altura_em_metros:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_descricao:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_dificuldade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_foto:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: imagem_padrao_dos_conteudos
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_instrucoes_de_acesso:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_local:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_site_oficial:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: ca402ca5-7a1d-4d31-bfe2-24f21beaa002
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.local
+id: taxonomy_term.local
+target_entity_type_id: taxonomy_term
+target_bundle: local
+default_langcode: site_default
+language_alterable: false

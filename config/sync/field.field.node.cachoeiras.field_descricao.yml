@@ -1,0 +1,22 @@
+uuid: f16a8bf6-136e-45af-8fa5-24ca58f98381
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao
+    - node.type.cachoeiras
+  module:
+    - text
+id: node.cachoeiras.field_descricao
+field_name: field_descricao
+entity_type: node
+bundle: cachoeiras
+label: Descrição
+description: 'Insira uma descrição detalhada da cachoeira, incluindo informações gerais e curiosidades.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

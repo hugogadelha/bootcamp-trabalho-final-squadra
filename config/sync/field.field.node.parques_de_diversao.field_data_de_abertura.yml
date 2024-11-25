@@ -1,0 +1,21 @@
+uuid: 79dba4de-6203-4423-b782-cffd6b5b9ed6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_de_abertura
+    - node.type.parques_de_diversao
+  module:
+    - datetime
+id: node.parques_de_diversao.field_data_de_abertura
+field_name: field_data_de_abertura
+entity_type: node
+bundle: parques_de_diversao
+label: 'Data de Abertura'
+description: 'Informe a data oficial de abertura do parque. Caso não saiba o dia exato, insira apenas o ano.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

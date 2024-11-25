@@ -1,0 +1,19 @@
+uuid: 522be723-d05d-4fa0-8b06-7e2b367d8105
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_instrucoes_de_acesso
+field_name: field_instrucoes_de_acesso
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: 00edde21-8dc6-453f-86c2-d082fa8014ef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local
+    - node.type.cachoeiras
+    - taxonomy.vocabulary.local
+  content:
+    - 'taxonomy_term:local:34e47b40-170b-4a3f-affc-dcf8bc409ea1'
+id: node.cachoeiras.field_local
+field_name: field_local
+entity_type: node
+bundle: cachoeiras
+label: Localização
+description: 'Selecione a localização da cachoeira na lista. Se o local não estiver listado, entre em contato com o administrador.'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 34e47b40-170b-4a3f-affc-dcf8bc409ea1
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      local: local
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

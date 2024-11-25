@@ -1,0 +1,32 @@
+uuid: 0b7101c8-0e47-4245-811e-d24d8c79d8da
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.ultimos_3_parques
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__ultimos_3_parques_block_2
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:ultimos_3_parques-block_2'
+settings:
+  id: 'views_block:ultimos_3_parques-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      parques_de_diversao: parques_de_diversao

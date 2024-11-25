@@ -1,0 +1,86 @@
+uuid: df5ee1e0-a5b9-4bd1-8721-f655133c0d83
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.parques_de_diversao.field_categoria
+    - field.field.node.parques_de_diversao.field_data_de_abertura
+    - field.field.node.parques_de_diversao.field_descricao
+    - field.field.node.parques_de_diversao.field_foto
+    - field.field.node.parques_de_diversao.field_local
+    - field.field.node.parques_de_diversao.field_site_oficial
+    - image.style.imagem_padrao_dos_conteudos
+    - node.type.parques_de_diversao
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.parques_de_diversao.default
+targetEntityType: node
+bundle: parques_de_diversao
+mode: default
+content:
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_data_de_abertura:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_descricao:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_foto:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: imagem_padrao_dos_conteudos
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_local:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_site_oficial:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

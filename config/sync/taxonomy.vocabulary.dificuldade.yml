@@ -1,0 +1,9 @@
+uuid: 7544bdf2-c8c3-4f64-973b-8f7d564abdc2
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Dificuldade
+vid: dificuldade
+description: 'Selecione o nível de dificuldade para chegar à cachoeira.'
+weight: 0
+new_revision: false

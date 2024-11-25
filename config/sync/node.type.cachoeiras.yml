@@ -1,0 +1,18 @@
+uuid: 1ac2a18d-d34a-4759-b137-98054d295250
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:standard.front_page'
+name: Cachoeiras
+type: cachoeiras
+description: 'Conteúdo para cadastro de cachoeiras, incluindo informações de localização, altura, instruções de acesso e imagem.'
+help: 'Insira o nome oficial da cachoeira, descreva suas características e como acessá-la, selecione a localização, altura, envie uma imagem e adicione a dificuldade de acesso.'
+new_revision: false
+preview_mode: 1
+display_submitted: false

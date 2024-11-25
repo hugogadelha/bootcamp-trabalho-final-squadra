@@ -1,0 +1,32 @@
+uuid: 90f4bc98-8549-4ace-bc48-b6568d282dc6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.ultimas_3_cachoeiras
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__ultimas_3_cachoeiras_block_2
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:ultimas_3_cachoeiras-block_2'
+settings:
+  id: 'views_block:ultimas_3_cachoeiras-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      cachoeiras: cachoeiras

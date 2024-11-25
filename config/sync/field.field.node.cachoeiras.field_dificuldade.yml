@@ -1,0 +1,29 @@
+uuid: 629ec04c-484c-4141-9d7e-09dc07cf19d8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dificuldade
+    - node.type.cachoeiras
+    - taxonomy.vocabulary.dificuldade
+id: node.cachoeiras.field_dificuldade
+field_name: field_dificuldade
+entity_type: node
+bundle: cachoeiras
+label: Dificuldade
+description: "Selecione o nível de dificuldade para chegar à cachoeira.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dificuldade: dificuldade
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
