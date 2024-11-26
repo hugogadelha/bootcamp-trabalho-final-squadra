@@ -62,6 +62,7 @@ composer install
 ddev drush sql-cli < database/dump.sql
 ddev drush cim -y
 ddev drush cr
+```
 
 Acesse o site no navegador:  
 [https://projeto-bootcamp-squadra.ddev.site/](https://projeto-bootcamp-squadra.ddev.site/)  
