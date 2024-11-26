@@ -1,0 +1,11 @@
+name: 'Olivero Subtheme'
+type: theme
+description: 'Meu subtema baseado no Olivero.'
+core_version_requirement: ^11 || ^10
+base theme: olivero
+libraries:
+  - olivero_subtheme/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'

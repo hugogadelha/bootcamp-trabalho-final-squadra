@@ -24,9 +24,10 @@
         "drupal/devel": "^5.3",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/image_effects": "^4.0@RC",
         "drupal/pathauto": "^1.13",
         "drupal/token": "^1.15",
-        "drush/drush": "^13.3"
+        "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
