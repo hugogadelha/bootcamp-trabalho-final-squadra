@@ -12,13 +12,15 @@ Bem-vindo ao **Guia de Parques e Cachoeiras do Brasil**, um projeto desenvolvido
 
 2. **Taxonomias**:  
    - **Localização**: País e estados.  
-   - **Dificuldade**: Fácil, Moderado, Difícil.  
+   - **Dificuldade**: Fácil, Moderado, Difícil. (Para Cachoeiras)
+   - **Tipo**: Aventura, Temático, Família. (Para Parques)
 
 3. **Blocos e Listagens**:  
    - Bloco com as **últimas 3 cachoeiras cadastradas**.  
-   - Bloco com os **3 últimos parques cadastrados** (com foto, nome, local e link).  
-   - Bloco de **cachoeiras relacionadas por dificuldade** (usando filtros contextuais).  
-   - Exibição **JSON** com listagem de todas as cachoeiras e parques.  
+   - Bloco com os **últimos 3 parques cadastrados** (com foto, nome, local e link).  
+   - Bloco de **cachoeiras relacionadas por dificuldade** (usando filtros contextuais).
+   - Bloco de **parques relacionados por localização** (usando filtros contextuais).  
+   - Exibição **JSON** com listagem de todas as cachoeiras e parques. (https://projeto-bootcamp-squadra.ddev.site/rest/parques-e-cachoeiras) 
 
 4. **Customizações**:  
    - **URLs amigáveis** para cada tipo de conteúdo.  
