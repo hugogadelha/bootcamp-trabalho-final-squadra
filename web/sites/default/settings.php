@@ -79,9 +79,9 @@
  *
  * @code
  * $databases['default']['default'] = [
- *   'database' => 'database_name',
- *   'username' => 'sql_username',
- *   'password' => 'sql_password',
+ *   'database' => 'database_hugo',
+ *   'username' => 'hugo',
+ *   'password' => '1234',
  *   'host' => 'localhost',
  *   'port' => '3306',
  *   'driver' => 'mysql',
@@ -90,7 +90,18 @@
  * ];
  * @endcode
  */
-$databases = [];
+
+$databases['default']['default'] = [
+    'driver' => 'mysql',
+    'database' => 'database_hugo',  // Nome do banco de dados
+    'username' => 'hugo',          // Usuário do banco de dados
+    'password' => '1234',          // Senha do banco de dados
+    'host' => '127.0.0.1',         // Host do banco de dados
+    'port' => '3306',              // Porta do MySQL
+    'prefix' => '',                // Prefixo opcional para tabelas
+    'collation' => 'utf8mb4_general_ci', // Opcional, define a collation
+];
+
 
 /**
  * Customizing database settings.
@@ -259,6 +270,8 @@ $databases = [];
  * its location.
  */
 # $settings['config_sync_directory'] = '/directory/outside/webroot';
+
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
@@ -897,3 +910,5 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+
