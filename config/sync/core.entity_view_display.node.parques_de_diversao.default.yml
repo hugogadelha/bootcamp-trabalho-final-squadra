@@ -14,9 +14,136 @@ dependencies:
   module:
     - datetime
     - image
+    - layout_builder
+    - layout_discovery
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+        components:
+          d84b50e6-90d5-4a90-8c4e-08b63b4bec89:
+            uuid: d84b50e6-90d5-4a90-8c4e-08b63b4bec89
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_descricao'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          ca1d7532-c3fc-42e6-b25f-400c7ad9d998:
+            uuid: ca1d7532-c3fc-42e6-b25f-400c7ad9d998
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_local'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          9b726c75-aea9-41f0-8384-6cc46dcdd192:
+            uuid: 9b726c75-aea9-41f0-8384-6cc46dcdd192
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_site_oficial'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          779fa62f-45b5-4387-9bf7-85ed8ce05e8a:
+            uuid: 779fa62f-45b5-4387-9bf7-85ed8ce05e8a
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_categoria'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          bce0d588-abf2-4dfd-b0b2-00e304a5288d:
+            uuid: bce0d588-abf2-4dfd-b0b2-00e304a5288d
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_data_de_abertura'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_custom
+                label: above
+                settings:
+                  timezone_override: ''
+                  date_format: d-m-Y
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          6cc954b8-4473-4b09-bd74-89fec36590b9:
+            uuid: 6cc954b8-4473-4b09-bd74-89fec36590b9
+            region: content
+            configuration:
+              id: 'extra_field_block:node:parques_de_diversao:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          70b7a9f5-8098-4b9d-a019-3ab28dffd7a9:
+            uuid: 70b7a9f5-8098-4b9d-a019-3ab28dffd7a9
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_foto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: imagem_padrao_dos_conteudos
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: node.parques_de_diversao.default
 targetEntityType: node
 bundle: parques_de_diversao

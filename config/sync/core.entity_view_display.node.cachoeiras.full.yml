@@ -1,0 +1,212 @@
+uuid: bc38ebd8-1bf1-474b-b9bf-0a5d3d7869d3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.cachoeiras.field_altura_em_metros
+    - field.field.node.cachoeiras.field_descricao
+    - field.field.node.cachoeiras.field_dificuldade
+    - field.field.node.cachoeiras.field_foto
+    - field.field.node.cachoeiras.field_instrucoes_de_acesso
+    - field.field.node.cachoeiras.field_local
+    - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.layout_builder__layout
+    - image.style.imagem_padrao_dos_conteudos
+    - node.type.cachoeiras
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          509441e6-983d-441f-b1b3-b7334b723da0:
+            uuid: 509441e6-983d-441f-b1b3-b7334b723da0
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cachoeiras:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          d772d67f-6168-4ad3-a4c9-bd4798f0f7fa:
+            uuid: d772d67f-6168-4ad3-a4c9-bd4798f0f7fa
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_descricao'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          99980d4a-321a-4e1d-a202-4ae1d6585bc8:
+            uuid: 99980d4a-321a-4e1d-a202-4ae1d6585bc8
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_foto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: imagem_padrao_dos_conteudos
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ed8215e4-385e-468e-aee3-57a98c4f918d:
+            uuid: ed8215e4-385e-468e-aee3-57a98c4f918d
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_local'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          e8ebc58d-16c7-4350-8d48-de26398feff9:
+            uuid: e8ebc58d-16c7-4350-8d48-de26398feff9
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_site_oficial'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          4e09bb06-6bed-473f-aafe-bc2e61fd4ec3:
+            uuid: 4e09bb06-6bed-473f-aafe-bc2e61fd4ec3
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_instrucoes_de_acesso'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          70e7b72e-40b5-4e12-921f-a1a63d08ebdd:
+            uuid: 70e7b72e-40b5-4e12-921f-a1a63d08ebdd
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_dificuldade'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+id: node.cachoeiras.full
+targetEntityType: node
+bundle: cachoeiras
+mode: full
+content:
+  field_descricao:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_dificuldade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_foto:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: imagem_padrao_dos_conteudos
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_instrucoes_de_acesso:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_local:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_site_oficial:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_altura_em_metros: true
+  langcode: true
+  layout_builder__layout: true

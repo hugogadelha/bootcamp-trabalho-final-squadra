@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.cachoeiras.field_instrucoes_de_acesso
     - field.field.node.cachoeiras.field_local
     - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.layout_builder__layout
     - image.style.thumbnail
     - node.type.cachoeiras
   module:
@@ -30,7 +31,7 @@ content:
     third_party_settings: {  }
   field_altura_em_metros:
     type: number
-    weight: 12
+    weight: 13
     region: content
     settings:
       placeholder: ''
@@ -45,7 +46,7 @@ content:
     third_party_settings: {  }
   field_dificuldade:
     type: options_select
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -73,7 +74,7 @@ content:
     third_party_settings: {  }
   field_site_oficial:
     type: link_default
-    weight: 14
+    weight: 15
     region: content
     settings:
       placeholder_url: ''
@@ -131,4 +132,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

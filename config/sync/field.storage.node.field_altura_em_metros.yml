@@ -1,4 +1,4 @@
-uuid: 480a2541-11d6-410a-a5d5-e255ba9bdc31
+uuid: 6bf92e3b-9b5c-46e6-90cb-b39f8256b23b
 langcode: pt-br
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
 id: node.field_altura_em_metros
 field_name: field_altura_em_metros
 entity_type: node
-type: integer
+type: decimal
 settings:
-  unsigned: false
-  size: normal
+  precision: 10
+  scale: 2
 module: core
 locked: false
 cardinality: 1

@@ -1,0 +1,21 @@
+uuid: fd3c4f2f-c82f-4b20-bbfa-4307aad910bc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.cachoeiras
+  module:
+    - layout_builder
+id: node.cachoeiras.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: cachoeiras
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

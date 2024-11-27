@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.cachoeiras.field_instrucoes_de_acesso
     - field.field.node.cachoeiras.field_local
     - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.layout_builder__layout
     - image.style.imagem_padrao_dos_conteudos
     - node.type.cachoeiras
   module:
@@ -21,21 +22,183 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+        components:
+          b43bf16e-0ceb-46a0-9e64-222090e8e512:
+            uuid: b43bf16e-0ceb-46a0-9e64-222090e8e512
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_foto'
+              label: Imagem
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: imagem_padrao_dos_conteudos
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          19dbce3b-7f05-4d15-8a42-c319b4a0242c:
+            uuid: 19dbce3b-7f05-4d15-8a42-c319b4a0242c
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cachoeiras:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          8c3d9d40-3231-4a84-89a3-89b844bb16f2:
+            uuid: 8c3d9d40-3231-4a84-89a3-89b844bb16f2
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_descricao'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          fb159721-a0a4-424f-8e84-22ce859ecdac:
+            uuid: fb159721-a0a4-424f-8e84-22ce859ecdac
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_foto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: imagem_padrao_dos_conteudos
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          78491fa1-b85f-483e-9b30-cdb6b64b7d25:
+            uuid: 78491fa1-b85f-483e-9b30-cdb6b64b7d25
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_local'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          ef0630ca-862e-4987-8470-d1ba87ff0860:
+            uuid: ef0630ca-862e-4987-8470-d1ba87ff0860
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_site_oficial'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          46b93b72-e48b-4fe9-8cd7-db46bca547e8:
+            uuid: 46b93b72-e48b-4fe9-8cd7-db46bca547e8
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_instrucoes_de_acesso'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          b2c3033b-9908-4084-8d87-8764db87642c:
+            uuid: b2c3033b-9908-4084-8d87-8764db87642c
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_dificuldade'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          b2a89d87-fc07-4dc6-8867-f0d9326db7d2:
+            uuid: b2a89d87-fc07-4dc6-8867-f0d9326db7d2
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_altura_em_metros'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+        third_party_settings: {  }
 id: node.cachoeiras.default
 targetEntityType: node
 bundle: cachoeiras
 mode: default
 content:
   field_altura_em_metros:
-    type: number_integer
+    type: number_decimal
     label: above
     settings:
       thousand_separator: ''
+      decimal_separator: .
+      scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 106
+    weight: 109
     region: content
   field_descricao:
     type: text_default
@@ -97,3 +260,4 @@ content:
     region: content
 hidden:
   langcode: true
+  layout_builder__layout: true
